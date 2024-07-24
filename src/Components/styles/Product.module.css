@@ -1,0 +1,30 @@
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 590px;
+  cursor: pointer;
+}
+
+.product img {
+  max-width: 120px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.info :nth-child(1) {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.info :nth-child(2) {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+.info :nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 6px;
+}

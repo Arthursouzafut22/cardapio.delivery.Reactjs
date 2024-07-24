@@ -1,0 +1,52 @@
+.header {
+  padding: 60px 20px;
+  background: url("src/assets/banner.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.header h1 {
+  margin-top: -60px;
+}
+
+.container {
+  z-index: 222;
+  max-width: 1200px;
+  width: 100%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  top: 120px;
+  padding: 8px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wrapper img {
+  max-width: 120px;
+  border-radius: 7px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  gap: 10px;
+  padding: 6px 6px;
+  border-radius: 6px;
+  box-shadow: 2px 5px 24px -6px rgba(204, 204, 204, 0.51);
+}
+
+.info p {
+  font-size: 22px;
+  font-weight: 600;
+}

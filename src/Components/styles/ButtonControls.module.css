@@ -1,0 +1,27 @@
+.controls {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 100px;
+  padding: 8px 5px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+}
+
+.controls input {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 35%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+.input {
+  font-size: 16px;
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #f3f4f6;
+  padding: 6px;
+  border: 1px solid darkgray;
+  border-radius: 7px;
+  transition: all 0.3s;
+  margin-top: 0px;
+}
+
+.input:focus:hover {
+  border-color: red;
+}
