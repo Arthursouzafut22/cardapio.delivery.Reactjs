@@ -20,8 +20,8 @@ const Header = () => {
             <FaLocationCrosshairs style={{ fontSize: "23px", color: "red" }} />
           </div>
         </div>
-        <FaSquareWhatsapp
-          style={{ color: "black", marginTop: "60px", fontSize: "35px" }}
+        <FaSquareWhatsapp className={styles.whatsapp}
+          style={{ color: "black", marginTop: "60px", fontSize: "35px", }}
         />
       </div>
     </header>

@@ -1,9 +1,31 @@
 .footer {
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  padding: 0.9375rem;
+  margin-top: 60px;
 }
 .footer p {
-    color: #6B7280;
+  color: #6b7280;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: white;
+  max-width: 1280px;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  z-index: 50;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 2px 5px 21px -13px rgba(204, 204, 204, 0.51);
 }

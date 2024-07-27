@@ -1,0 +1,44 @@
+.cart {
+  border: 2px solid;
+  max-width: 500px;
+  padding: 12px;
+}
+
+.cart p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ordem {
+  display: flex;
+  align-items: center;
+}
+
+.ordem span p {
+  font-size: 18px;
+}
+.ordem span {
+  color: red;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 6px; /* SO DE TESTE...... */
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.containerBts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}

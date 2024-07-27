@@ -1,7 +1,7 @@
 .product {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   max-width: 590px;
   cursor: pointer;
 }
@@ -9,7 +9,7 @@
 .product img {
   max-width: 120px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .info :nth-child(1) {
@@ -19,6 +19,7 @@
 
 .info :nth-child(2) {
   font-size: 15px;
+  text-wrap: wrap;
   line-height: 1.4;
   color: #6b7280;
 }

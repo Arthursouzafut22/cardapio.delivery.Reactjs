@@ -1,15 +1,15 @@
 .main {
   max-width: 1200px;
   width: 100%;
-  margin: 80px auto auto auto;
-  padding: 8px;
+  margin: 220px auto auto auto;
+  padding: 0.75rem;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   row-gap: 25px;
 }
 

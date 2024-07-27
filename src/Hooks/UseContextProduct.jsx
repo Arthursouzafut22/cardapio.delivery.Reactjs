@@ -5,6 +5,16 @@ export const ContextUse = React.createContext();
 
 export const ProdoctStorage = ({ children }) => {
   const { fetchProduct, product, error, loading } = UseApiFetch();
+  const [barAtivo, setBarAtivo] = React.useState(false);
+  const [cart, setCart] = React.useState([]);
+  console.log(cart);
+
+  const addProductCart = (item) => {
+    if (cart.includes(item)) return;
+    setCart([...cart, item]);
+  };
+
+  function removeProduct(item) {}
 
   React.useEffect(() => {
     async function PromisseProduct() {
@@ -16,10 +26,19 @@ export const ProdoctStorage = ({ children }) => {
   }, [fetchProduct]);
 
   return (
-    <ContextUse.Provider value={{ product, error, loading }}>
+    <ContextUse.Provider
+      value={{
+        product,
+        error,
+        loading,
+        barAtivo,
+        setBarAtivo,
+        cart,
+        addProductCart,
+        removeProduct,
+      }}
+    >
       {children}
     </ContextUse.Provider>
   );
 };
-
-// export const AuthProduct = React.useContext(ContextUse);
