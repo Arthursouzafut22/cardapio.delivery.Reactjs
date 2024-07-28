@@ -9,14 +9,7 @@ import { useContext } from "react";
 import { ContextUse } from "../Hooks/UseContextProduct";
 
 const ModalProduct = ({ ativo, setAtivo, modal }) => {
-  const { setBarAtivo, addProductCart } = useContext(ContextUse);
-
-  // const addProductCart = () => {
-  //   setBarAtivo(true);
-  //   console.log(true)
-  //   // setAtivo(false);
-
-  // }
+  const { addProductCart } = useContext(ContextUse);
 
   if (!ativo) return null;
   return (
@@ -64,3 +57,9 @@ const ModalProduct = ({ ativo, setAtivo, modal }) => {
 };
 
 export default ModalProduct;
+
+// const addProductCart = () => {
+
+//   setAtivo(false);
+
+// }

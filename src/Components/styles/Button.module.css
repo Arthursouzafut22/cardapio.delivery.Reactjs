@@ -1,35 +1,42 @@
 .button {
-    font-size: 1.125rem;
-    padding: 0.5625rem 0.3125rem;
-    border-radius: 0.5rem;
-    border: none;
-    color: white;
-    background-color: #DC2626ed;
-    cursor:pointer;
-    flex: 1;
+  font-size: 1.125rem;
+  padding: 0.5625rem 0.3125rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: #dc2626ed;
+  cursor: pointer;
+  flex: 1;
 }
 
 .noflex {
-    flex: unset;
-    font-size: 16px;
-    padding: 0.5625rem 0.345rem;
-  }
+  flex: unset;
+  font-size: 16px;
+  padding: 0.5625rem 0.345rem;
+}
 
-  .normalButton {
-    flex: unset;
-    display: block;
-    color: black;
-    background-color: transparent;
-  }
+.normalButton {
+  flex: unset;
+  display: block;
+  color: black;
+  background-color: transparent;
+}
 
-  .buttonGreen {
-    font-size: 1.125rem;
-    padding: 0.5625rem 0.3125rem;
-    border-radius: 0.5rem;
-    border: none;
-    color: white;
-    background-color: #DC2626ed;
-    cursor:pointer;
-    background-color: green;
-    flex: unset;
-  }
+.buttonZero {
+  flex: unset;
+  background-color: transparent;
+  color: black;
+  padding: 0;
+}
+
+.buttonGreen {
+  font-size: 1.125rem;
+  padding: 0.5625rem 0.3125rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: #dc2626ed;
+  cursor: pointer;
+  background-color: green;
+  flex: unset;
+}

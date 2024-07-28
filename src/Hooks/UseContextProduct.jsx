@@ -7,14 +7,21 @@ export const ProdoctStorage = ({ children }) => {
   const { fetchProduct, product, error, loading } = UseApiFetch();
   const [barAtivo, setBarAtivo] = React.useState(false);
   const [cart, setCart] = React.useState([]);
-  console.log(cart);
+  const [total, setTotal] = React.useState(0);
 
   const addProductCart = (item) => {
     if (cart.includes(item)) return;
     setCart([...cart, item]);
+    setBarAtivo(true);
+    setTotal(() => total + item.preco);
   };
 
-  function removeProduct(item) {}
+  const removeProduct = (product, item) => {
+    setCart((anterior) => {
+      return anterior.filter((_, index) => index !== product);
+    });
+    setTotal(() => total - item.preco);
+  };
 
   React.useEffect(() => {
     async function PromisseProduct() {
@@ -36,6 +43,7 @@ export const ProdoctStorage = ({ children }) => {
         cart,
         addProductCart,
         removeProduct,
+        total,
       }}
     >
       {children}
