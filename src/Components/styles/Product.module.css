@@ -4,12 +4,15 @@
   gap: 0.625rem;
   max-width: 590px;
   cursor: pointer;
+ 
 }
 
 .product img {
   max-width: 120px;
   background-color: white;
   border-radius: 0.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .info :nth-child(1) {

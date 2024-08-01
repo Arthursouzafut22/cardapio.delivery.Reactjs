@@ -1,0 +1,100 @@
+.section {
+  position: fixed;
+  height: 100vw;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.538);
+  z-index: 430;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 450px;
+  width: 100%;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  position: fixed;
+  padding: 15px;
+  margin: 0 auto;
+  z-index: 450;
+}
+
+.wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+}
+
+.wrapper2 p {
+  font-size: 17px;
+  color: "#4B5563";
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  color: "#4B5563";
+}
+
+.form p {
+  font-size: 17px;
+  color: "#4B5563" !important;
+  margin-top: 6px;
+}
+
+.wrapperRadio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid gren;
+}
+.wrapperRadio label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.formFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.formFlex :first-child {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.container :first-child {
+  flex: 2;
+}
+
+.container :last-child {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+  cursor: pointer;
+}

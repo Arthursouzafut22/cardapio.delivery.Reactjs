@@ -3,13 +3,14 @@ import styles from "./styles/ButtonControls.module.css";
 import ButtonCart from "./ButtonCart";
 import styless from "../Components/styles/Button.module.css";
 import React from "react";
+import { ContextUse } from "../Hooks/UseContextProduct";
 
 const ButtonControls = () => {
-  const [value, setValue] = React.useState(1);
+  const { valor, setValue } = React.useContext(ContextUse);
 
   return (
     <span className={styles.controls}>
-      {value === 1 ? (
+      {valor === 1 ? (
         <ButtonCart disabled className={styless.buttonZero}>
           <FaMinus style={{ fontSize: "18px", cursor: "pointer" }} />
         </ButtonCart>
@@ -17,15 +18,15 @@ const ButtonControls = () => {
         <ButtonCart className={styless.buttonZero}>
           <FaMinus
             style={{ fontSize: "18px", cursor: "pointer" }}
-            onClick={() => setValue(value - 1)}
+            onClick={() => setValue(valor - 1)}
           />
         </ButtonCart>
       )}
 
-      <input type="number" name="number" id="number" value={value} />
+      <input type="number" name="number" id="number" value={valor} />
       <FaPlus
         style={{ fontSize: "18px", color: "red", cursor: "pointer" }}
-        onClick={() => setValue(value + 1)}
+        onClick={() => setValue(valor + 1)}
       />
     </span>
   );

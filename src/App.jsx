@@ -10,7 +10,7 @@ function App() {
       <ProdoctStorage>
         <Header />
         <Main />
-        <Footer/>
+        <Footer />
       </ProdoctStorage>
     </>
   );

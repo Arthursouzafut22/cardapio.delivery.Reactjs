@@ -8,8 +8,8 @@ import { createPortal } from "react-dom";
 import { useContext } from "react";
 import { ContextUse } from "../Hooks/UseContextProduct";
 
-const ModalProduct = ({ ativo, setAtivo, modal }) => {
-  const { addProductCart } = useContext(ContextUse);
+const ModalProduct = ({ modal }) => {
+  const { addProductCart, valor, setAtivo, ativo } = useContext(ContextUse);
 
   if (!ativo) return null;
   return (
@@ -44,7 +44,7 @@ const ModalProduct = ({ ativo, setAtivo, modal }) => {
                 <div className={styles.containerButtons}>
                   <ButtonControls />
                   <ButtonCart onClick={() => addProductCart(item)}>
-                    Adicionar {FormatePrice(item.preco)}
+                    Adicionar {FormatePrice(valor * item.preco)}
                   </ButtonCart>
                 </div>
               </div>,

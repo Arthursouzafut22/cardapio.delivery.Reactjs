@@ -1,0 +1,22 @@
+.input {
+  padding: 10px;
+  background-color: #f3f4f6;
+  outline: none;
+  border: 1px solid darkgray;
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+    margin-bottom: 12px; 
+}
+
+.input:focus:hover {
+  border-color: red;
+}
+
+label,
+.input {
+  display: block;
+}

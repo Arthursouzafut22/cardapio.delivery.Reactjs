@@ -5,9 +5,8 @@ import ModalProduct from "../Components/ModalProduct";
 import FormatePrice from "./FormatePrice";
 
 const Product = () => {
-  const { product } = React.useContext(ContextUse);
+  const { product, ativo, setAtivo } = React.useContext(ContextUse);
   const [modal, setModal] = React.useState(false);
-  const [ativo, setAtivo] = React.useState(false);
 
   const itemsProduct = (...item) => {
     setModal(item);
