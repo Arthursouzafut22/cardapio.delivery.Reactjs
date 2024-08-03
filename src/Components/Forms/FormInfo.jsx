@@ -20,7 +20,7 @@ const FormInfo = () => {
               <FaChevronLeft
                 style={{
                   color: "#4B5563",
-                  fontSize: "20px",
+                  fontSize: "1.25rem",
                   cursor: "pointer",
                 }}
                 onClick={() => setFormAtivo(false)}
@@ -29,7 +29,7 @@ const FormInfo = () => {
               <IoCloseSharp
                 style={{
                   color: "#FF0000",
-                  fontSize: "26px",
+                  fontSize: "1.625rem",
                   cursor: "pointer",
                 }}
                 onClick={() => setFormAtivo(false)}

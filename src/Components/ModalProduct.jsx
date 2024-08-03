@@ -57,9 +57,3 @@ const ModalProduct = ({ modal }) => {
 };
 
 export default ModalProduct;
-
-// const addProductCart = () => {
-
-//   setAtivo(false);
-
-// }

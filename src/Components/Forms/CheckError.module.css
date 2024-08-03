@@ -1,0 +1,17 @@
+.CheckError {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  gap: 10px;
+  max-width: 300px;
+  width: 100%;
+  color: #ff0000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 23px 7px rgba(204, 204, 204, 0.47);
+  border-left: 4px solid #ff0000;
+}

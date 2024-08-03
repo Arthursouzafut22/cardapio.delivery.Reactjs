@@ -18,7 +18,7 @@
   transform: translateX(-50%);
   background-color: #fff;
   position: fixed;
-  padding: 15px;
+  padding: 0.9375rem;
   margin: 0 auto;
   z-index: 450;
 }
@@ -28,12 +28,12 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid darkgray;
-  padding-bottom: 8px;
-  margin-bottom: 5px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.3125rem;
 }
 
 .wrapper2 p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: "#4B5563";
 }
 
@@ -47,28 +47,28 @@ label {
 }
 
 .form p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: "#4B5563" !important;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 .wrapperRadio {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   border: 1px solid gren;
 }
 .wrapperRadio label {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .formFlex {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .formFlex :first-child {
@@ -79,8 +79,8 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 1.875rem;
+  margin-top: 1.875rem;
 }
 
 .container :first-child {
@@ -88,13 +88,13 @@ label {
 }
 
 .container :last-child {
-  font-size: 17px;
+  font-size: 1.0625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
   background-color: white;
   border: 1px solid #e5e7eb;
-  padding: 6px;
+  padding: 0.375rem;
   cursor: pointer;
 }

@@ -9,7 +9,7 @@
   border: 1px solid darkgray;
   border-radius: 7px;
   transition: all 0.3s;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .input:focus:hover {

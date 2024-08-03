@@ -6,13 +6,15 @@ import Spinner from "./Spinner";
 import Cart from "./Cart";
 import ToastNotification from "./ToastNotification";
 import FormInfo from "./Forms/FormInfo";
+import FinalizeOrder from "./FinalizeOrder";
 
 const Main = () => {
   const { error, loading } = React.useContext(ContextUse);
 
   return (
     <main className={styles.main}>
-      <FormInfo/>
+      <FinalizeOrder />
+      <FormInfo />
       <ToastNotification />
       <Cart />
       {error && <p>{error}</p>}
