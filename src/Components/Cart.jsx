@@ -28,11 +28,11 @@ const Cart = () => {
               cart.map((item, index) => (
                 <div key={index} className={styles.product}>
                   <div className={styles.ordem}>
-                    <div>
+                    <div style={{ marginTop: "0.625rem" }}>
                       <img src={item.imagem} alt="imagem" />
                       <p>observação: {item.observacao}</p>
                     </div>
-                    <p>{item.nome}</p>
+                    <p className={styles.nome}>{item.nome}</p>
                   </div>
                   <p className={styles.price}>
                     {FormatePrice(item.quantidade * item.preco)}

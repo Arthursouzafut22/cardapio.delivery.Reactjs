@@ -4,7 +4,6 @@
   gap: 0.625rem;
   max-width: 590px;
   cursor: pointer;
- 
 }
 
 .product img {
@@ -22,7 +21,6 @@
 
 .info :nth-child(2) {
   font-size: 15px;
-  text-wrap: wrap;
   line-height: 1.4;
   color: #6b7280;
 }
@@ -32,3 +30,20 @@
   font-weight: 500;
   margin-top: 6px;
 }
+
+@media (max-width: 760px) {
+  .info :nth-child(2) {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity));
+  }
+}
+
