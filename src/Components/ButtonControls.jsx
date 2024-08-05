@@ -23,7 +23,7 @@ const ButtonControls = () => {
         </ButtonCart>
       )}
 
-      <input type="number" name="number" id="number" value={valor} />
+      <input type="number" name="number" id="number" value={valor}  style={{pointerEvents:"none"}}/>
       <FaPlus
         style={{ fontSize: "18px", color: "red", cursor: "pointer" }}
         onClick={() => setValue(valor + 1)}

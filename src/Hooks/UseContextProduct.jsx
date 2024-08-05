@@ -43,7 +43,7 @@ export const ProdoctStorage = ({ children }) => {
       : forms.rua === ""
       ? setError("Preencha a rua") || false
       : forms.numero === ""
-      ? setError("Preencha o numero") || false
+      ? setError("Preencha o número") || false
       : troco === ""
       ? setError("Selecione o pagamento") || false
       : (setError(null), true);
@@ -58,22 +58,39 @@ export const ProdoctStorage = ({ children }) => {
   };
 
   const addProductCart = (item) => {
-    const obj = { ...item, quantidade: valor, observacao: area };
-    if (cart.some((cartItem) => cartItem.nome === item.nome)) return;
-    setCart([...cart, obj]);
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (existingItem) {
+        return prevCart.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantidade: cartItem.quantidade + valor }
+            : cartItem
+        );
+      } else {
+        return [...prevCart, { ...item, quantidade: valor, observacao: area }];
+      }
+    });
+    setTotal((prevTotal) => prevTotal + item.preco * valor);
     setBarAtivo(true);
     setArea("");
-    setAtivo(() => false);
-    setNotification(() => true);
-    setTotal(() => Number(obj.quantidade * item.preco + total));
+    setAtivo(false);
+    setNotification(true);
   };
 
   const removeProduct = (productIndex, item) => {
-    if (Math.abs(total) === 0) return null;
-    setCart((anterior) => {
-      return anterior.filter((_, index) => index !== productIndex);
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (existingItem.quantidade > 1) {
+        return prevCart.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantidade: cartItem.quantidade - 1 }
+            : cartItem
+        );
+      } else {
+        return prevCart.filter((cartItem) => cartItem.id !== item.id);
+      }
     });
-    setTotal(() => Number(item.quantidade * item.preco) - Math.abs(total));
+    setTotal((prevTotal) => prevTotal - item.preco);
   };
 
   React.useEffect(() => {

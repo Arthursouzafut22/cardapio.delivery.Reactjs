@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  gap: 0.625rem;
+  gap: 1.25rem;
   row-gap: 25px;
 }
 
