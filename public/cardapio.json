@@ -3,7 +3,7 @@
   {"tipo": "hamburgue",
     "id": 1,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue1.png",
+    "imagem": "assets/img.hamburgue/burgue1.png",
     "nome": "X-Burguer",
     "descricao": "pao, molho especial, ham bovino, mussarela, alface, tomate, batata palha e milho.",
     "preco": 14.0
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue2.png",
+    "imagem": "assets/img.hamburgue/burgue2.png",
     "nome": "X-Egg Burguer",
     "descricao": "Pão, molho especial, ham bovino, ovo, mussarela, alface, tomate, batata palha e milho.",
     "preco": 16.0
@@ -19,7 +19,7 @@
   {
     "id": 3,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue3.png",
+    "imagem": "assets/img.hamburgue/burgue3.png",
     "nome": "X-Bacon",
     "descricao": "pao, molho especial, ham bovino, mussarela, alface, tomate, batata palha e milho.",
     "preco": 20.0
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue4.png",
+    "imagem": "assets/img.hamburgue/burgue4.png",
     "nome": "X-Catupiry",
     "descricao": "Pão, molho especial, ham bovino, ovo, presunto, frango desfiado, catupiri, bacon, alface, tomate, batata palha e milho.",
     "preco": 23.0
@@ -35,7 +35,7 @@
   {
     "id": 5,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue5.png",
+    "imagem": "assets/img.hamburgue/burgue5.png",
     "nome": "Mata Fome",
     "descricao": "Pão, molho especial, 2 ham bovinos, 2 ovos , 2 presuntos, 2 queijos, frango desfiado, catupiri, bacon, alface, tomate, batata palha e milho.",
     "preco": 28.0
@@ -43,7 +43,7 @@
   {
     "id": 6,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue6.png",
+    "imagem": "assets/img.hamburgue/burgue6.png",
     "nome": "X-Popular",
     "descricao": "Pão, molho especial, ham bovino, ovo, 2 mussarelas, 2 presuntos, alface, tomate, batata palha e milho.",
     "preco": 20.0
@@ -51,7 +51,7 @@
   {
     "id": 7,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue7.png",
+    "imagem": "assets/img.hamburgue/burgue7.png",
     "nome": "X-Egg Bacon",
     "descricao": "Pão, molho especial, ham bovino, ovo, mussarela, bacon, alface, tomate, batata palha e milho.",
     "preco": 22.0
@@ -59,7 +59,7 @@
   {
     "id": 8,
     "type": "hamburgue",
-    "imagem": "public/assets/img.hamburgue/burgue8.png",
+    "imagem": "assets/img.hamburgue/burgue8.png",
     "nome": "X-tudo",
     "descricao": "Pão, molho especial, ham bovino, ovo, 2 mussarelas, 2 presuntos, alface, tomate, batata palha e milho.",
     "preco": 25.0
@@ -69,7 +69,7 @@
     "id": 9,
     "type": "fritas",
     "teste": "Fritas",
-    "imagem": "public/assets/fritas/fritas1.png",
+    "imagem": "assets/fritas/fritas1.png",
     "nome": "Fritas Pura",
     "descricao": "Fritas Pura",
     "preco": 20.0
@@ -77,7 +77,7 @@
   {
     "id": 10,
     "type": "fritas",
-    "imagem": "public/assets/fritas/fritas2.png",
+    "imagem": "assets/fritas/fritas2.png",
     "nome": "Fritas com frango",
     "descricao": "Fritas com frango",
     "preco": 30.0
@@ -85,7 +85,7 @@
   {
     "id": 11,
     "type": "fritas",
-    "imagem": "public/assets/fritas/fritas3.png",
+    "imagem": "assets/fritas/fritas3.png",
     "nome": "Mandioca frita",
     "descricao": "Mandioca frita",
     "preco": 28.0
@@ -93,7 +93,7 @@
   {
     "id": 12,
     "type": "bebidas",
-    "imagem": "public/assets/bebidas/bebida1.png",
+    "imagem": "assets/bebidas/bebida1.png",
     "nome": "Cerveja shop 300ml",
     "descricao": "Cerveja shop 300ml",
     "preco": 18.0
@@ -101,7 +101,7 @@
   {
     "id": 13,
     "type": "bebidas",
-    "imagem": "public/assets/bebidas/bebida2.png",
+    "imagem": "assets/bebidas/bebida2.png",
     "nome": "Cerveja Tradicional 200ml",
     "descricao": "Cerveja Tradicional 200ml",
     "preco": 12.0
@@ -109,7 +109,7 @@
   {
     "id": 14,
     "type": "bebidas",
-    "imagem": "public/assets/bebidas/bebida4.png",
+    "imagem": "assets/bebidas/bebida4.png",
     "nome": "Suco de limao 250ml",
     "descricao": "Suco de limao 250ml",
     "preco": 15.0
