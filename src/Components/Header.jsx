@@ -13,7 +13,7 @@ const Header = () => {
         <div className={styles.wrapper}>
           <img src={Logo} alt="logo" />
           <div className={styles.info}>
-            <p>Pytter Burguer</p>
+            <p>Hothot Burguer</p>
             <FaCircleExclamation
               style={{ fontSize: "23px", cursor: "pointer" }}
             />

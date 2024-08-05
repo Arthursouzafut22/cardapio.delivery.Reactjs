@@ -30,7 +30,6 @@ export const ProdoctStorage = ({ children }) => {
   });
 
   const changeForms = ({ target }) => {
-    console.log(target.value);
     const { id, value } = target;
     setForms({ ...forms, [id]: value });
   };
