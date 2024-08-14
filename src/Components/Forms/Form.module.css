@@ -5,7 +5,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.538);
   z-index: 430;
   box-sizing: border-box;
 }

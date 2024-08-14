@@ -4,7 +4,7 @@
   gap: 0.625rem;
   max-width: 590px;
   cursor: pointer;
-  box-shadow: 2px 5px 23px -5px rgba(204, 204, 204, 0.51);
+  box-shadow: 2px 5px 4px 3px rgba(204, 204, 204, 0.41);
   border-radius: 0.375rem;
   padding: 0.1875rem;
 }
