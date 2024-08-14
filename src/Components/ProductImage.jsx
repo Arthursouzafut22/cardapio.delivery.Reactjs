@@ -5,17 +5,6 @@ const ProductImage = ({ src, alt }) => {
 
   return (
     <>
-      {!loaded && (
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: "100%",
-          }}
-        />
-      )}
       <img
         src={src}
         alt={alt}
