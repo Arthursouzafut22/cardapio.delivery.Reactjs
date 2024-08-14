@@ -13,7 +13,6 @@ const ProductImage = ({ src, alt }) => {
             left: 0,
             height: "100%",
             width: "100%",
-            backgroundColor: "#f0f0f0",
           }}
         />
       )}
