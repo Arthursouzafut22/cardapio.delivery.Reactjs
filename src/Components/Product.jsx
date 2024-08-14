@@ -3,6 +3,7 @@ import { ContextUse } from "../Hooks/UseContextProduct";
 import styles from "../Components/styles/Product.module.css";
 import ModalProduct from "../Components/ModalProduct";
 import FormatePrice from "./FormatePrice";
+import LazyImage from "./LazyImage";
 
 const Product = () => {
   const { product, ativo, setAtivo } = React.useContext(ContextUse);
@@ -22,7 +23,7 @@ const Product = () => {
           className={styles.product}
           onClick={() => itemsProduct(item)}
         >
-          <img src={item.imagem} alt="imagem" />
+          <LazyImage src={item.imagem} alt={item.nome} />
           <div className={styles.info}>
             <p>{item.nome}</p>
             <p>{item.descricao}</p>
