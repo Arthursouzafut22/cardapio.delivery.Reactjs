@@ -32,7 +32,9 @@ const Cart = () => {
                       <img src={item.imagem} alt="imagem" />
                       <p>observação: {item.observacao}</p>
                     </div>
-                    <p className={styles.nome}>({item.quantidade}){item.nome}</p>
+                    <p className={styles.nome}>
+                      ({item.quantidade}){item.nome}
+                    </p>
                   </div>
                   <p className={styles.price}>
                     {FormatePrice(item.quantidade * item.preco)}

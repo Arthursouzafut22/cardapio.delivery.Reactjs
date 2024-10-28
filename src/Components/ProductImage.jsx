@@ -1,19 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const ProductImage = ({ src, alt }) => {
+const ProductImage = ({ src, alt, fallback }) => {
   const [loaded, setLoaded] = useState(false);
 
-  return (
-    <>
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        onLoad={() => setLoaded(true)}
-        style={{ opacity: loaded ? 1 : 0, transition: "opacity 0.5s ease-in" }}
-      />
-    </>
-  );
+  useEffect(() => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => setLoaded(true);
+  }, [src]);
+
+  if (!loaded) return fallback;
+
+  return <img src={src} alt={alt} />;
 };
 
 export default ProductImage;

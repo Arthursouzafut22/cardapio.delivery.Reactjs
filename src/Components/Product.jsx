@@ -4,6 +4,8 @@ import styles from "../Components/styles/Product.module.css";
 import ModalProduct from "../Components/ModalProduct";
 import FormatePrice from "./FormatePrice";
 import ProductImage from "./ProductImage";
+import { Suspense } from "react";
+import Spinner from "./Spinner";
 
 const Product = () => {
   const { product, ativo, setAtivo } = React.useContext(ContextUse);
@@ -23,7 +25,13 @@ const Product = () => {
           className={styles.product}
           onClick={() => itemsProduct(item)}
         >
-          <ProductImage src={item.imagem} alt={item.nome} />
+          <Suspense fallback={<Spinner/>}>
+            <ProductImage
+              src={item.imagem}
+              alt={item.nome}
+              fallback={<Spinner/>}
+            />
+          </Suspense>
           <div className={styles.info}>
             <p>{item.nome}</p>
             <p>{item.descricao}</p>
