@@ -2,7 +2,7 @@ import React from "react";
 import Input from "./Input";
 import styles from "../Forms/Form.module.css";
 import styless from "../styles/Button.module.css";
-import ButtonCart from "../ButtonCart";
+import ButtonCart from "../Buttons/ButtonCart";
 import { FaArrowLeft } from "react-icons/fa";
 import { ContextUse } from "../../Hooks/UseContextProduct";
 

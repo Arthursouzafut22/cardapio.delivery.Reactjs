@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../Components/styles/Finalize.module.css";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
-import ButtonCart from "./ButtonCart";
+import ButtonCart from "../Buttons/ButtonCart";
 import styless from "../Components/styles/Button.module.css";
-import { ContextUse } from "../Hooks/UseContextProduct";
-import FormatePrice from "./FormatePrice";
+import { ContextUse } from "../../Hooks/UseContextProduct";
+import FormatePrice from "../FormatePrice/FormatePrice";
 import { createPortal } from "react-dom";
 
 const FinalizeOrder = () => {

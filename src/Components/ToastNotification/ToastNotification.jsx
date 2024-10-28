@@ -1,6 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
 import styles from "../Components/styles/Toast.module.css";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 import React from "react";
 
 const ToastNotification = () => {

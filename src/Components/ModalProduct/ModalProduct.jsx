@@ -1,12 +1,12 @@
 import styles from "../Components/styles/ModalProduct.module.css";
 import { IoCloseSharp } from "react-icons/io5";
-import FormatePrice from "./FormatePrice";
-import InputArea from "./InputArea";
-import ButtonControls from "./ButtonControls";
-import ButtonCart from "./ButtonCart";
+import FormatePrice from "../FormatePrice/FormatePrice";
+import InputArea from "../InputArea/InputArea";
+import ButtonControls from "../ButtonControls/ButtonControls";
+import ButtonCart from "../Buttons/ButtonCart";
 import { createPortal } from "react-dom";
 import { useContext } from "react";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 
 const ModalProduct = ({ modal }) => {
   const { addProductCart, valor, setAtivo, ativo } = useContext(ContextUse);

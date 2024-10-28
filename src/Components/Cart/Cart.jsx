@@ -1,9 +1,9 @@
-import ButtonCart from "./ButtonCart";
+import ButtonCart from "../ButtonCart";
 import styles from "../Components/styles/Cart.module.css";
 import styless from "../Components/styles/Button.module.css";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 import { useContext } from "react";
-import FormatePrice from "../Components/FormatePrice";
+import FormatePrice from "../FormatePrice";
 import cesta from "../assets/cesta.png";
 import { createPortal } from "react-dom";
 

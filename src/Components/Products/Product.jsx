@@ -1,11 +1,11 @@
 import React from "react";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 import styles from "../Components/styles/Product.module.css";
-import ModalProduct from "../Components/ModalProduct";
-import FormatePrice from "./FormatePrice";
-import ProductImage from "./ProductImage";
+import ModalProduct from "../ModalProduct/ModalProduct";
+import FormatePrice from "../FormatePrice/FormatePrice";
+import ProductImage from "../ProductImage/ProductImage";
 import { Suspense } from "react";
-import Spinner from "./Spinner";
+import Spinner from "../Loader/Spinner";
 
 const Product = () => {
   const { product, ativo, setAtivo } = React.useContext(ContextUse);
@@ -25,11 +25,11 @@ const Product = () => {
           className={styles.product}
           onClick={() => itemsProduct(item)}
         >
-          <Suspense fallback={<Spinner/>}>
+          <Suspense fallback={<Spinner />}>
             <ProductImage
               src={item.imagem}
               alt={item.nome}
-              fallback={<Spinner/>}
+              fallback={<Spinner />}
             />
           </Suspense>
           <div className={styles.info}>

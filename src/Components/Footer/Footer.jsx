@@ -1,5 +1,5 @@
 import styles from "../Components/styles/Footer.module.css";
-import BarCart from "./BarCart";
+import BarCart from "../BarCart/BarCart";
 
 const Footer = () => {
   return (

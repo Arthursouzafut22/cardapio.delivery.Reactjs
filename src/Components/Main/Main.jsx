@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "../Components/styles/Main.module.css";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 import Product from "./Product";
-import Spinner from "./Spinner";
+import Spinner from "../Loader/Spinner";
 import Cart from "./Cart";
-import ToastNotification from "./ToastNotification";
-import FormInfo from "./Forms/FormInfo";
-import FinalizeOrder from "./FinalizeOrder";
+import ToastNotification from "../ToastNotification/ToastNotification";
+import FormInfo from "../Forms/FormInfo";
+import FinalizeOrder from "../FinalizeOrder/FinalizeOrder";
 
 const Main = () => {
   const { error, loading } = React.useContext(ContextUse);

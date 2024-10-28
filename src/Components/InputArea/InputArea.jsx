@@ -1,6 +1,6 @@
 import styles from "./styles/InputArea.module.css";
 import React from "react";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 
 const Input = () => {
   const { area, setArea } = React.useContext(ContextUse);

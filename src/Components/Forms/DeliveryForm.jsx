@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import FormDados from "./FormDados";
-import ButtonCart from "../ButtonCart";
+import ButtonCart from "../Buttons/ButtonCart";
 import styles from "../Forms/Form.module.css";
 import { ContextUse } from "../../Hooks/UseContextProduct";
 import CheckError from "./CheckError";
@@ -23,8 +23,7 @@ const DeliveryForm = () => {
   };
 
   function validatyOrdem() {
-    forms.nome === "" ? setError("Preencha o nome") 
-    : setFinalize(() => true);
+    forms.nome === "" ? setError("Preencha o nome") : setFinalize(() => true);
   }
 
   return (
@@ -62,7 +61,10 @@ const DeliveryForm = () => {
         </span>
         {entrega === "delivery" ? <FormDados /> : ""}
         {entrega === "buscar" ? (
-          <ButtonCart style={{ marginTop: "1.5625rem" }} onClick={validatyOrdem}>
+          <ButtonCart
+            style={{ marginTop: "1.5625rem" }}
+            onClick={validatyOrdem}
+          >
             Conferir pedido
           </ButtonCart>
         ) : (

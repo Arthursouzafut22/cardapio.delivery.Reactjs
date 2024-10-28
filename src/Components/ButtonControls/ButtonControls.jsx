@@ -1,9 +1,9 @@
 import { FaPlus, FaMinus } from "react-icons/fa";
 import styles from "./styles/ButtonControls.module.css";
-import ButtonCart from "./ButtonCart";
+import ButtonCart from "../Buttons/ButtonCart";
 import styless from "../Components/styles/Button.module.css";
 import React from "react";
-import { ContextUse } from "../Hooks/UseContextProduct";
+import { ContextUse } from "../../Hooks/UseContextProduct";
 
 const ButtonControls = () => {
   const { valor, setValue } = React.useContext(ContextUse);
@@ -23,7 +23,13 @@ const ButtonControls = () => {
         </ButtonCart>
       )}
 
-      <input type="number" name="number" id="number" value={valor}  style={{pointerEvents:"none"}}/>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        value={valor}
+        style={{ pointerEvents: "none" }}
+      />
       <FaPlus
         style={{ fontSize: "18px", color: "red", cursor: "pointer" }}
         onClick={() => setValue(valor + 1)}
